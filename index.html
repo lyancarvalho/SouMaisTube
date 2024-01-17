@@ -6,27 +6,102 @@
     <title>Sou +Tube</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../SouMaisTube/pngs/favicon-R.png" type="image/x-icon">
+    <style> /* estilo apenas para o .menu */
+    body {
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s ease;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dark-mode {
+        background-color: #222;
+        color: #757575;
+    }
+
+    button {
+        padding: 4px;
+        cursor: pointer;
+        background-color: #8be4f0;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+    }
+
+    </style>
+
 </head>
 <body>
     <header>
-        <a href="pags/musicas.html"><img src="pngs/logo.png" alt="Sou+ Tube"></a>
+        <a href="pags/musicas.html"><img src="pngs/logo.png" alt="Sou+ Tube" class="logo"></a>
         <a href="#"><img src="pngs/perfil.png" alt="Perfil" class="perfil"></a>
     </header>
 
-    <nav>
+    <input type="text">
+    
+    <header class="menu">
+        <div class="tema">
+            <img src="pngs/menu.png" alt="Menu" class="menu">
+            <p><button onclick="toggleMode()">Alternar Tema</button></p>
+        </div>
+    </header>
+    
 
+    <nav>
+        
     </nav>
 
     <main>
         <picture>
             <source media="(max-width: )" srcset="">
-            <img src="pngs/anSTB.png" alt="anuncio Sou +Tube" class="anstb">
+            <img src="pngs/anSTB.png" alt="anuncio Sou +Tube" class="anstb" >
         </picture>
+
         <h2 class="ra">Recentemente Adicionados</h2>
+
+        <div class="videos">
+            <li type="none"><video src=""></video></li>
+            <li type="none"><video src=""></video></li>
+            <li type="none"><video src=""></video></li>
+            <li type="none"><video src=""></video></li>
+        </div>
+
     </main>
 
     <footer>
 
     </footer>
+
+    <script>
+        function toggleMode() {
+        const body = document.body;
+    
+        // Adiciona ou remove a classe 'dark-mode' no corpo
+        body.classList.toggle('dark-mode');
+    
+        // Armazena o modo atual no armazenamento local
+        const isDarkMode = body.classList.contains('dark-mode');
+        localStorage.setItem('dark-mode', isDarkMode);
+        }
+    
+        // Verifica se o modo escuro está ativado ao carregar a página
+        document.addEventListener('DOMContentLoaded', () => {
+        const isDarkMode = localStorage.getItem('dark-mode') === 'true';
+    
+        if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        }
+
+        });
+    
+        </script>
+
 </body>
 </html>

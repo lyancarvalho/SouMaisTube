@@ -2,33 +2,74 @@
     margin: auto;
 }
 
-body {
-    background-color: rgb(22, 22, 22);
-}
-
 header {
     background-color: rgb(0, 0, 0);
     padding-top: 15px;
     padding-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 24px;
+}
+
+header.menu {
+    float: left;
+    width: 100px;
+    margin-top: -55px;
+    margin-left: -16px;
+}
+
+input {
+    margin-left: 400px;
+    width: 500px;
+    height: 35px;
+}
+
+img.logo {
+    padding-left: 15px;
 }
 
 img.perfil {
-    display: inline-block;
-    margin-left: 88%;
+    margin-left: 85%;
+}
+
+.menu:hover {
+    border-radius: 4px;
 }
 
 main {
     color: white;
+    margin-top: 50px;
 }
 
 img.anstb {
-    padding-top: 60px;
-    padding-left: 115px;
+    margin-top: 60px;
+    margin-left: 115px;
 }
 
 h2.ra {
     color: rgb(255, 255, 255);
     padding-top: 50px;
     padding-left: 145px;
+}
+
+div.videos {
+    padding-top: 40px;
+    padding-left: 120px;
+}
+
+li {
+    display: inline-block;
+    background-color: black;
+    width: 300px;
+}
+
+div.tema {
+    display: inline-block;
+}
+
+div.tema p {
+    display: none;
+}
+
+div.tema:hover p {
+    display: block;
+    padding-top: 20px;
 }
