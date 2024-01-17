@@ -5,7 +5,8 @@ font-family: 'Salsa', cursiva;
 */
 
 * {
-    margin: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -39,25 +40,28 @@ main {
 }
 
 img.anstb {
-    margin-top: 60px;
-    margin-left: 115px;
+    display: block;
+    margin: auto;
+    margin-top: 90px;
 }
 
 h2 {
-    font-family: 'Salsa', cursiva;
+    font-family: 'Salsa', Arial, Helvetica, sans-serif;
     padding-top: 50px;
-    padding-left: 145px;
+    padding-left: 16%;
 }
 
 div.videos {
-    padding-top: 40px;
-    padding-left: 120px;
+    display: block;
+    margin-top: 40px;
+    margin-left: 20%;
 }
 
 li {
     display: inline-block;
     background-color: black;
     width: 300px;
+    margin-top: 5px;
 }
 
 div.tema {

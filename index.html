@@ -35,6 +35,18 @@
         border-radius: 4px;
     }
 
+    a.inc {
+        font-size: 0.87em;
+        padding: 4px;
+        cursor: pointer;
+        background-color: #8be4f0;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        
+    } 
+
     </style>
 
 </head>
@@ -47,6 +59,7 @@
     <header class="menu">
         <div class="tema">
             <img src="pngs/menu.png" alt="Menu" class="menu">
+            <p><a href="index.html" class="inc">inicio</a></p>
             <p><button onclick="toggleMode()">Alternar Tema</button></p>
         </div>
     </header>
@@ -59,13 +72,17 @@
     <main>
         <picture>
             <source media="(max-width: )" srcset="">
-            <img src="pngs/anSTB.png" alt="anuncio Sou +Tube" class="anstb" >
+            <source media="(max-width: 330px)" srcset="pngs/anuncio-XPP.png">
+            <source media="(max-width: 491px)" srcset="pngs/anuncio-pp.png">
+            <source media="(max-width: 727px)" srcset="pngs/anuncio-p.png">
+            <source media="(max-width: 940px)" srcset="pngs/anuncio-mm.png">
+            <source media="(max-width: 1200px)" srcset="pngs/anuncio-m.png">
+            <img src="pngs/anuncio-g.png" alt="anuncio Sou +Tube" class="anstb" >
         </picture>
 
         <h2 class="ra">Recentemente Adicionados</h2>
 
         <div class="videos">
-            <li type="none"><video src=""></video></li>
             <li type="none"><video src=""></video></li>
             <li type="none"><video src=""></video></li>
             <li type="none"><video src=""></video></li>
