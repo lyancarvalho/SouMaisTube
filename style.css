@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+/*
+font-family: 'Salsa', cursiva;
+*/
+
 * {
     margin: auto;
 }
@@ -16,12 +22,6 @@ header.menu {
     margin-left: -16px;
 }
 
-input {
-    margin-left: 400px;
-    width: 500px;
-    height: 35px;
-}
-
 img.logo {
     padding-left: 15px;
 }
@@ -35,7 +35,6 @@ img.perfil {
 }
 
 main {
-    color: white;
     margin-top: 50px;
 }
 
@@ -44,8 +43,8 @@ img.anstb {
     margin-left: 115px;
 }
 
-h2.ra {
-    color: rgb(255, 255, 255);
+h2 {
+    font-family: 'Salsa', cursiva;
     padding-top: 50px;
     padding-left: 145px;
 }
